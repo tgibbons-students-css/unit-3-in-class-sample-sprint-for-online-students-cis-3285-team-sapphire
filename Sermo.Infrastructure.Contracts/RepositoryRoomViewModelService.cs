@@ -35,6 +35,9 @@ namespace Sermo.UI.Controllers
             return allRooms;
         }
 
+
+        // Changes for sprint #1 -- User Story 3 -- Jonathan Senger
+        // Changers for Sprint 1 -- I want to view the messages that have been sent to a room. -- Jonathan Senger
         public IEnumerable<MessageViewModel> GetRoomMessages(int roomID)
         {
             var roomMessages = new List<MessageViewModel>();
