@@ -40,6 +40,9 @@ namespace Sermo.UI.Controllers
         }
 
         [HttpPost]
+
+        // Changes Sprint 1 -- User story 2 -- Jonathan Senger
+        // Changes Aprint 1 -- “I want to view a list of rooms that represent conversations.” - Jonathan Senger
         public ActionResult Create(RoomViewModel model)
         {
             ActionResult result;
@@ -66,6 +69,8 @@ namespace Sermo.UI.Controllers
             return View(messageListViewModel);
         }
 
+        //Sprint 1 #4 - Send plain text messages to other room members
+        //Modified By: Jack Seibert
         [HttpPost]
         public ActionResult AddMessage(MessageViewModel messageViewModel)
         {
