@@ -36,7 +36,7 @@ namespace Sermo.Data.Mongo
             var messageQuery = Query<MessageViewModel>.EQ(viewModel => viewModel.RoomID, roomID);
             var messagesCollection = GetMessagesCollection();
             return messagesCollection.Find(messageQuery);
-        }
+        }// made a change -- Jack Cooper
 
         public void AddMessage(MessageViewModel messageViewModel)
         {
@@ -49,7 +49,7 @@ namespace Sermo.Data.Mongo
             var database = GetDatabase();
             var messagesCollection = database.GetCollection<MessageViewModel>(MessagesCollection);
             return messagesCollection;
-        }
+        } // made a change -- Jack Cooper
 
         private MongoCollection<RoomViewModel> GetRoomsCollection()
         {
