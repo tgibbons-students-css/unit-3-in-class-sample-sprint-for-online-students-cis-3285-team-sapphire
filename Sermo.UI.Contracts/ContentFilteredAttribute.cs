@@ -9,6 +9,9 @@ namespace Sermo.UI.Contracts
 {
     public class ContentFilteredAttribute : ValidationAttribute
     {
+        // Changes Sprint 2 -- user story #2 -- Jonathan Senger
+        // Changes Sprint 2 -- I want to filter message content so that it is appropriate. -- Jonathan Senger
+
         private readonly string[] blacklist = new string[] 
         {
             "hefferlump",
