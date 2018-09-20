@@ -46,6 +46,7 @@ namespace Sermo.UnitTests
 
             Assert.That(result, Is.InstanceOf<ViewResult>());
         }
+        // Made a change -- Jack Cooper
 
         [Test]
         public void GetCreateSetsViewModel()
@@ -74,6 +75,7 @@ namespace Sermo.UnitTests
 
             Assert.That(isValid, Is.False);
         }
+        // Made a change -- Jack Cooper
 
         [Test]
         [TestCase("Callooh! Callay! O frabjous day!")]

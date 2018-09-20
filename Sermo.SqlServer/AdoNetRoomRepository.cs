@@ -19,8 +19,9 @@ namespace Sermo.Data.AdoNet
             Contract.Requires<ArgumentNullException>(databaseFactory != null);
 
             this.applicationSettings = applicationSettings;
-            this.databaseFactory = databaseFactory; 
-        }
+            this.databaseFactory = databaseFactory;
+        }// made a change -- Jack Cooper
+
 
         public void CreateRoom(string name)
         {
@@ -44,7 +45,7 @@ namespace Sermo.Data.AdoNet
                     command.ExecuteNonQuery();
                 }
             }
-        }
+        }// made a change -- Jack Cooper
 
         public IEnumerable<RoomRecord> GetAllRooms()
         {
@@ -71,7 +72,7 @@ namespace Sermo.Data.AdoNet
                         }
                     }
                 }
-            }
+            }// made a change -- Jack Cooper
 
             return allRooms;
         }
